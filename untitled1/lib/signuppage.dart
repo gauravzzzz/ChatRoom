@@ -49,7 +49,7 @@ class _Sign extends State<Sign> {
                     padding:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                     child: TextField(
-                        controller: email,
+
                         minLines: 1,
                         style: const TextStyle(
                           color: Colors.black,
@@ -103,7 +103,6 @@ class _Sign extends State<Sign> {
                         ),
                         decoration: InputDecoration(
                           suffixIcon: TextButton(
-
                             onPressed: () async { await FirebaseAuth.instance.verifyPhoneNumber(
                               phoneNumber: '+91 ${phone.text}',
                               verificationCompleted:
